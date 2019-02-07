@@ -10,12 +10,131 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <title>Bi-Weedkly-Timesheet</title>
+  <title>Bi-Weedkly Timesheet</title>
 </head>
 
 <body>
+  <div class="container-fluid">
+    <div class="row mt-4">
+      <div class="col-12 text-center">
+        <h1>Bi-Weekly-TimeSheet</h1>
+      </div>
+    </div>
 
+    <!-- week 1 -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <h2>Monday</h2>
+            <div class="mt-5">
+              <h3 class="hours mt-4"></h3>
+              <button class="btn btn-sm btn-outline-success" onclick="">+</button>
+              <button class="btn btn-sm btn-outline-danger" onclick="">-</button>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <h2>Tuesday</h2>
+            <div class="mt-5">
+              <h3 class="hours mt-4"></h3>
+              <button class="btn btn-sm btn-outline-success" onclick="">+</button>
+              <button class="btn btn-sm btn-outline-danger" onclick="">-</button>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <h2>Wednesday</h2>
+            <div class="mt-5">
+              <h3 class="hours mt-4"></h3>
+              <button class="btn btn-sm btn-outline-success" onclick="">+</button>
+              <button class="btn btn-sm btn-outline-danger" onclick="">-</button>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <h2>Thursday</h2>
+            <div class="mt-5">
+              <h3 class="hours mt-4"></h3>
+              <button class="btn btn-sm btn-outline-success" onclick="">+</button>
+              <button class="btn btn-sm btn-outline-danger" onclick="">-</button>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <h2>Friday</h2>
+            <div class="mt-5">
+              <h3 class="hours mt-4"></h3>
+              <button class="btn btn-sm btn-outline-success" onclick="">+</button>
+              <button class="btn btn-sm btn-outline-danger" onclick="">-</button>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <h2>Week 1 Total</h2>
+            <div class=" mt-5">
+              <h3 class="hours mt-4" id="week1Total"></h3>
+            </div>
+          </div>
+        </div>
 
+        <!-- week 2 -->
+        <div class="row mt-5">
+          <div class="col d-flex justify-content-center">
+            <h2>Monday</h2>
+            <div class="mt-5">
+              <h3 class="hours mt-4"></h3>
+              <button class="btn btn-sm btn-outline-success" onclick="">+</button>
+              <button class="btn btn-sm btn-outline-danger" onclick="">-</button>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <h2>Tuesday</h2>
+            <div class="mt-5">
+              <h3 class="hours mt-4"></h3>
+              <button class="btn btn-sm btn-outline-success" onclick="">+</button>
+              <button class="btn btn-sm btn-outline-danger" onclick="">-</button>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <h2>Wednesday</h2>
+            <div class="mt-5">
+              <h3 class="hours mt-4"></h3>
+              <button class="btn btn-sm btn-outline-success" onclick="">+</button>
+              <button class="btn btn-sm btn-outline-danger" onclick="">-</button>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <h2>Thursday</h2>
+            <div class="mt-5">
+              <h3 class="hours mt-4"></h3>
+              <button class="btn btn-sm btn-outline-success" onclick="">+</button>
+              <button class="btn btn-sm btn-outline-danger" onclick="">-</button>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <h2>Friday</h2>
+            <div class="mt-5">
+              <h3 class="hours mt-4"></h3>
+              <button class="btn btn-sm btn-outline-success" onclick="">+</button>
+              <button class="btn btn-sm btn-outline-danger" onclick="">-</button>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <h2>Week 2 Total</h2>
+            <div class=" mt-5">
+              <h3 class="hours mt-4" id="week2Total"></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-10 d-flex justify-content-end">
+        <h2 class="cummulative mt-5">Cummulative Total</h2>
+      </div>
+      <div class="col-2 d-flex justify-content-center">
+        <h2 id="grandTotal"></h2>
+      </div>
+    </div>
+
+  </div>
 
   <script src="main.js"></script>
 </body>
