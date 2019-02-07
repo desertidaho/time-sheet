@@ -43,7 +43,15 @@ let pay = 0;
 
 function calculateCummulativeTotal() {
   grand = week1Total + week2Total;
-  pay = grand * 75
+
+  earned()
+}
+
+let input = 0
+
+function earned() {
+  input = document.getElementById('hourlyWage').value;
+  pay = input * grand
 
   draw()
 }
@@ -65,4 +73,5 @@ function draw() {
   document.getElementById('week2Total').innerText = week2Total.toString();
   document.getElementById('grandTotal').innerText = grand.toString();
   document.getElementById('grandPay').innerText = `$ ${pay.toString()}`;
+  document.getElementById('rate').innerText = input.toString();
 }

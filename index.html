@@ -126,20 +126,37 @@
     </div>
 
     <div class="row mt-5">
-      <div class="col-10 d-flex justify-content-end">
-        <h2 class="cummulative mt-5">Total Hours Worked:</h2>
+      <div class="col-3 offset-3 mt-5">
+        <div class="input-group mt-5">
+          <input id="hourlyWage" type="text" class="form-control shadow" placeholder="Enter hourly wage..." aria-label=""
+            aria-describedby="basic-addon1" data-target="">
+          <div class="input-group-append">
+            <button class="btn btn-success shadow" type="button" onclick="earned()">Submit</button>
+          </div>
+        </div>
+
       </div>
-      <div class="col-2 d-flex justify-content-center">
-        <h2 class="mt-5" id="grandTotal">0</h2>
+
+      <div class="col-6">
+        <div class="row">
+          <div class="col-10 d-flex justify-content-end">
+            <h2 class="cummulative mt-5">Total Hours Worked:</h2>
+          </div>
+          <div class="col-2 d-flex justify-content-center">
+            <h2 class="mt-5" id="grandTotal">0</h2>
+          </div>
+        </div>
+        <div class="row mt-1">
+          <div class="col-10 d-flex justify-content-end">
+            <h2 class="">Cummulative Pay @ $<span id="rate"> ______ </span>/hour:</h2>
+          </div>
+          <div class="col-2 d-flex justify-content-center">
+            <h2 class="" id="grandPay">0</h2>
+          </div>
+        </div>
+
       </div>
-    </div>
-    <div class="row mt-1">
-      <div class="col-10 d-flex justify-content-end">
-        <h2 class="">Cummulative Pay @ $75/hr:</h2>
-      </div>
-      <div class="col-2 d-flex justify-content-center">
-        <h2 class="" id="grandPay">0</h2>
-      </div>
+
     </div>
 
   </div>
