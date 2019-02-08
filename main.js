@@ -17,11 +17,9 @@ function subHour(i, j) {
     week[i][j]--
   }
 
-
   calculateWeek1Total()
   calculateWeek2Total()
 }
-
 
 let week1Total = 0
 let week2Total = 0
@@ -64,12 +62,14 @@ function draw() {
   document.getElementById('w1w').innerText = week[0][2].toString();
   document.getElementById('w1th').innerText = week[0][3].toString();
   document.getElementById('w1f').innerText = week[0][4].toString();
+  document.getElementById('week1Pay').innerText = (week1Total * input).toString();
 
   document.getElementById('w2m').innerText = week[1][0].toString();
   document.getElementById('w2tu').innerText = week[1][1].toString();
   document.getElementById('w2w').innerText = week[1][2].toString();
   document.getElementById('w2th').innerText = week[1][3].toString();
   document.getElementById('w2f').innerText = week[1][4].toString();
+  document.getElementById('week2Pay').innerText = (week2Total * input).toString();
 
   document.getElementById('week1Total').innerText = week1Total.toString();
   document.getElementById('week2Total').innerText = week2Total.toString();
