@@ -4,7 +4,9 @@ let week = [
 ];
 
 function addHour(i, j) {
-  week[i][j]++
+  if (week[i][j] < 24) {
+    week[i][j]++
+  }
 
   calculateWeek1Total()
   calculateWeek2Total()
