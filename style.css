@@ -1,3 +1,16 @@
 body {
   margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.w1,
+.w2 {
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+
+.bottom {
+  height: 40vh;
+  background: linear-gradient(white 5%, gray);
 }
